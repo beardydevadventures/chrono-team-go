@@ -1,0 +1,169 @@
+/*
+	blue 2d4afe
+	red fe0000
+	yellow daa73e
+	green 94c66f
+*/
+
+.heading-block h2 { 
+	color: #282828;
+	font-size: 3em;
+	-webkit-text-stroke: 0.01em white;
+}
+
+.entry-meta li {
+    font-size: 1.25em;
+}
+
+.swiper_wrapper .swiper-slide {
+    background-position: top center;
+}
+
+.ctg-blue {
+	color: #2d4afe;
+}
+
+.ctg-yellow {
+	color: #daa73e;
+}
+
+.ctg-red {
+	color: #fe0000;
+}
+
+.ctg-green {
+	color: #94c66f;
+}
+
+.ctg-bg-blue {
+	background-color: #2f4982;
+}
+
+.ctg-bg-yellow {
+	background-color: #b49948;
+}
+
+.ctg-bg-red {
+	background-color: #842d2e;
+}
+
+.ctg-bg-green {
+	background-color: #557260;
+}
+
+.ctg-bg-section {
+	background-image: url('ctg-images/bg-texture.jpg'); 
+	background-repeat: repeat;
+}
+
+.section-overlay {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.6);
+}
+
+#side-panel-btn {
+	position: fixed;
+    z-index: 398;
+    margin: 15px 0 0 15px !important;
+}
+
+#side-panel-close-btn {
+	position: absolute;
+    top: 15px;
+    right: 45px;
+}
+
+#side-panel-btn .i-rounded {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* background texture fix */
+.heading-block {
+	position: relative;
+}
+
+.ctg-gate {
+	position: absolute; 
+	top:-20px; left: 
+	calc(50% - 175px);
+}
+
+.rotate-me {
+    -webkit-animation: rotation 30s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359.9deg);}
+}
+
+.fadedTop {
+    overflow: auto;
+    position: relative;
+    height: 100px;
+}
+
+.fadedTop_fade {
+    content:'';
+    margin-top: -100px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(251, 251, 251, 1) 0%, rgba(251, 251, 251, 0) 100%);
+    position: relative;
+}
+
+.texture-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent url(/images/grid.png) repeat;
+    -webkit-backface-visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.ctg-hero-name {
+	margin-top: 200px;
+}
+
+.ctg-foe-name {
+	margin-top: 250px;
+}
+
+/* For Card Placement Animation */
+.card-container {
+	display: inline-block;
+}
+
+.card-layout {
+	background-position-x: center;
+	background-repeat: no-repeat; 
+	min-height: 200px;
+	max-height: 200px; 
+	min-width: 200px; 
+	max-width: 200px;
+}
+
+/* For Hero Avatars */
+.hero-image {
+ 	background-position-x: center;
+ 	background-repeat: no-repeat; 
+ 	min-height: 500px;
+}
+
+/* Fix Banner Height Mobile */
+@media (max-width: 479px) {
+	.swiper_wrapper:not(.force-full-screen), .swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide, .ei-slider {
+	    height: 580px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.slider-caption p {
+	    display: block !important;
+	}
+}

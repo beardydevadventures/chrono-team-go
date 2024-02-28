@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Matthew Aisthorpe" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<!-- Custom CSS
+	============================================= -->
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+	<link rel="stylesheet" href="custom.css" type="text/css" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>CTG - A Time Traveling Space Game</title>
+	
+	<!-- Facebook
+	============================================= -->
+	<meta property="og:url"                content="http://chronoteamgo.com/" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="Chrono Team Go" />
+	<meta property="og:description"        content="A cooperative path-building card game for 1-4 players. The fast set-up and easy-to-learn card placement mechanism gets you into the game quickly." />
+	<meta property="og:image"              content="http://chronoteamgo.com/ctg-images/large-logo-text.png" />
+	
+</head>
+
+<body class="stretched side-panel-left">
+
+	
+	<div class="body-overlay"></div>
+	
+	<a id="side-panel-btn" href="#" class="side-panel-trigger"><i class="i-rounded icon-line-menu nomargin"></i></a>
+
+	<a id="side-panel-btn" href="https://www.facebook.com/chronoteamgo" target="_blank" style="margin: 80px 0 0 15px !important;"><i class="i-rounded icon-facebook nomargin"></i></a>
+	
+	<!-- Side Panel
+	============================================= -->	
+	<div id="side-panel" class="dark">
+
+		<div class="side-panel-wrap">
+			
+			<a id="side-panel-close-btn" href="#" class="side-panel-trigger"><i class="i-rounded i-small icon-remove nomargin"></i></a>
+
+			<div class="clearfix">
+				
+				<h4>Sections</h4>
+
+				<nav class="nav-tree nobottommargin">
+					<ul>
+						<li>
+							<a href="#" data-scrollto="#slider" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>Back to Top</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#content" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>Welcome</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#ctg-about" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>Gameplay Breakdown</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#ctg-testimonials" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>What's in the Box</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#ctg-rules" data-offset="100" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>Rules</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#ctg-beta-test" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>Pre Launch Sessions</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#ctg-faq" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>FAQ</a>
+						</li>
+						<li>
+							<a href="#" data-scrollto="#ctg-team" data-offset="0" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>The Team</a>
+						</li>
+						<li><a ref="#" data-scrollto="#ctg-signup" data-offset="100" class="side-panel-trigger"><i class="icon-chevron-sign-right"></i>Sign Up</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class="widget quick-contact-widget clearfix">
+
+				<h4>Quick Contact</h4>
+				<div class="quick-contact-form-result"></div>
+				<form id="quick-contact-form" name="quick-contact-form" action="/api/Comms" method="post" class="quick-contact-form nobottommargin">
+					<div class="form-process"></div>
+					<input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
+					<input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
+					<textarea class="required sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30" placeholder="Message"></textarea>
+					<input id="quick-contact-form-checkbox" class="checkbox-style" name="quick-contact-form-checkbox" type="checkbox" checked="">
+					<label for="quick-contact-form-checkbox" class="checkbox-style-3-label font-body">Send me Updates</label>
+					<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+					<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d nomargin" value="submit">Send Email</button>
+				</form>
+
+			</div>
+
+		</div>
+
+	</div><!-- #side-panel end -->
+
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+		
+		<div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
+		
+		<section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+			<div class="slider-parallax-inner">
+
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark" style="background-image: url('ctg-images/banner.jpg');">
+							
+							<div class="texture-overlay"></div>
+							
+							<div class="container clearfix">
+								<div class="slider-caption slider-caption-center">
+									<img src="ctg-images/spinning_wheel.png" class="aligncenter notopmargin hidden-xs ctg-gate rotate-me" alt="Image" title="Image">
+									<img src="ctg-images/large-logo-text.png" class="aligncenter" alt="Image" title="Image" data-caption-animate="fadeInUp">
+									<h1 class="hidden">Chrono Team Go</h1>
+									<p class="font-secondary" data-caption-animate="fadeInUp" data-caption-delay="200">A cooperative space-time exploration game for 1 to 4 players.<br/><span class="hidden-xs">Can you find the relics and escape the rift?</span></p>
+									<!--<div class="postcontent nobottommargin clearfix">
+				
+										<div class="style-msg errormsg">
+											<div class="sb-msg"><i class="icon-remove"></i><strong>You shouldn't be here!</strong> This site is under construction. Go away. Please.</div>
+										</div>
+				
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>-->
+				</div>
+
+				<a href="#" data-scrollto="#content" data-offset="0" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+			</div>
+		</section>
+
+		<!-- Content
+		============================================= -->
+		<section id="content notopmargin">
+
+			<div id="content" class="content-wrap nopadding">
+				
+				<div class="section clearfix notopmargin nobottommargin ctg-bg-section">
+						
+					<div class="section-overlay"></div>	
+					
+					<div class="heading-block center nobottomborder">
+						<h2>Welcome to the Chrono Team</h2>
+						<span>Are you ready to enter the Rift?</span>
+					</div>
+					
+					<div class="container clearfix">
+						<div class="col_full lead">
+							<p>Chrono Team Go is a cooperative path-building card game for 1-4 players. Your goal as the Chrono Team is to find Relics within the void and return unscathed.</p>
+
+							<p>Players choose one of the eight heroes, each featuring a unique power that is tuned to a colour of the void. The game starts with a single card face up, you take turns placeing cards matching up gates. With tactical card placement, you take turns placing cards around the starting card matching up the zone gates and exploring the void. Depending on the alignment of the gate you may find the hidden relics or encountering a denizin of the void. Matching the colour of the void card with your Hero's colour allows you to activate their power, giving your team an advantage to find more relics and survive the void.</p>
+
+							<p>Chrono Team Go utilises a deck building mechanism to ensure that each game experience is unique.</p>
+						</div>
+					</div>
+					
+					<div class="container clearfix">
+						<div class="col_full nobottommargin">
+							<img src="ctg-images/ctg-layout.png" alt="Teh game Layout">
+						</div>
+					</div>
+					
+				</div>
+				
+				<div id="ctg-stats" class="section clearfix notopmargin notoppadding nobottommargin nobottompadding">
+					<div class="col-md-3 col-sm-6 dark center col-padding ctg-bg-red">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-users"></i>
+							<div class="counter counter-lined">1 <text class="font-body">-</text> <span data-from="0" data-to="4" data-refresh-interval="1" data-speed="250">0</span></div>
+							<h5>Players</h5>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 dark center col-padding ctg-bg-blue">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-user-follow"></i>
+							<div class="counter counter-lined"><span data-from="0" data-to="12" data-refresh-interval="1" data-speed="200">0</span> <text class="font-body">+</text> </div>
+							<h5>Years</h5>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 dark center col-padding ctg-bg-yellow">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-layers"></i>
+							<div class="counter counter-lined"><span data-from="0" data-to="116" data-refresh-interval="1" data-speed="300">0</span> <text class="font-body"></text></div>
+							<h5>Cards</h5>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 dark center col-padding ctg-bg-green">
+						<div>
+							<i class="i-plain i-xlarge divcenter icon-line2-clock"></i>
+							<div class="counter counter-lined"><span data-from="0" data-to="30" data-refresh-interval="1" data-speed="300">0</span> <text class="font-body">-</text> <span data-from="30" data-to="60" data-refresh-interval="1" data-speed="300">30</span></div>
+							<h5>Minutes</h5>
+						</div>
+					</div>
+				</div>
+				
+				<div id="ctg-about" class="section clearfix notopmargin nobottommargin ctg-bg-section">
+						
+					<div class="section-overlay"></div>	
+					
+					<div class="heading-block center nobottomborder">
+						<h2>Gameplay Breakdown</h2>
+					</div>
+					
+					<div class="container clearfix">
+						<div class="col_full">
+							<div class="col-sm-6 topmargin hero-image" style="background-image: url('ctg-images/hero-card-yellow-female.jpg'); height: 159px;" data-animate="fadeInLeft">
+							</div>
+							<div class="col-sm-6 topmargin">
+								<div class="heading-block">
+									<h3>Pick Your Hero</h3>
+								</div>
+		
+								<p>Each of the eight <strong>Hero's</strong> feature their own unique <strong>Super</strong> that activates when tuned to their current coloured zone.</p>
+								<p>Each <strong>Super</strong> changes the way the game is played and opens up new options for you and the team. What team combos can you discover?</p>
+								<p>Every <strong>Hero</strong> starts with ten units of space-time <strong>Power</strong>, but be careful! Exhausting your <strong>Power</strong> will mean the end of the hero and the game.</p>
+							</div>
+						</div>
+						<div class="col_full nopadding">
+							<div class="col-sm-12 topmargin">
+								<div class="heading-block">
+									<h3>Enter The Rift and Place Your Zones</h3>
+								</div>
+								<p>As you move your hero between <strong>Zones</strong>, you have the opportunity to combine <strong>Zone Gates</strong>, the doorways of space and time.</p>
+								<p>Depending on the created gate's formation, you may have the opportunity to pick up a valuable <strong>Reward</strong> or be forced to take a <strong>Risk</strong>.</p>
+							</div>	
+							<div class="col-sm-12">
+								<div class="card-container-wrapper center">
+									<div class="card-container">
+										<div class="col-sm-4 nopadding card-layout" style="background: url('ctg-images/card-portal.jpg');" data-animate="fadeInLeft"></div>
+										<div class="col-sm-4 nopadding card-layout" style="background: url('ctg-images/card-2.jpg');" data-animate="fadeInUp" data-delay="200"></div>
+										<div class="col-sm-4 nopadding card-layout" style="background: url('ctg-images/card-3.jpg');" data-animate="fadeInRight" data-delay="400"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col_full nopadding">
+							<div class="col-sm-6 topmargin">
+								<div class="heading-block">
+									<h3>Find the Rewards</h3>
+								</div>
+		
+								<p>The Reward deck consists of <strong>Recharge</strong> and <strong>Relic</strong> cards</p>
+								<p><strong>Recharge</strong> cards are crucial in replenishing your Hero's power</p>
+								<p>Finding a powerful <strong>Relic</strong> will enhance your Hero's capabilities and open the way to your team's combined victory.</p>
+							</div>
+							<div class="col-sm-6 topmargin hero-image" style="background-image: url('ctg-images/relic-card.jpg'); height: 159px;" data-animate="fadeInRight">
+							</div>
+						</div>
+						<div class="col_full nopadding">
+							<div class="col-sm-6 topmargin">
+								<div class="heading-block">
+									<h3>Avoid the Risks</h3>
+								</div>
+
+								<p>The Risk deck consists of <strong>Shock</strong> and <strong>Foe</strong> cards</p>
+								<p>Drawing a <strong>Shock</strong> card will damage your Hero's power</p>
+								<p>Encountered <strong>Foe's</strong> can unpredictably affect your hero and their inventory. Beware the lurking Time Guardian, protector of the rift!</p>
+							</div>
+							<div class="col-sm-6 topmargin hero-image" style="background-image: url('ctg-images/shock-card.jpg'); height: 159px;" data-animate="fadeInRight">
+							</div>
+						</div>
+						<div class="col_full nopadding">
+							<div class="col-sm-6 topmargin center" data-animate="fadeInLeft">
+								<img src="ctg-images/card-portal-large.jpg" alt="Exit Portal">
+							</div>
+							<div class="col-sm-6 topmargin">
+								<div class="heading-block">
+									<h3>Escape the Rift</h3>
+								</div>
+									
+								<p>Find the <strong>Rift Gate</strong> to escape the <strong>Rift</strong></p>
+								<p>Your <strong>Hero</strong> will take damage for each <strong>Zone</strong> in your hand that is not of their colour when exiting the Rift, try to remove them before the <strong>Exit Portal</strong> is revealed.</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="section parallax dark notopmargin nobottommargin nobottompadding" style="background-image: url('ctg-images/red-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+					
+					<div class="texture-overlay"></div>
+					
+					<div class="container clearfix">
+						
+						<div class="heading-block center nobottomborder">
+						<h2>
+							<div class="text-rotater ctg-red" data-separator="|" data-rotate="fadeInUp" data-speed="2500">
+								Red The power of <span class="t-rotate morphext"><span class="animated fadeInDown">Strength|Willpower|Vigor</span></span>
+							</div>
+						</h2>
+						</div>
+						
+						<div class="container clearfix">
+							<div id="ctg-features" class="col_full nopadding common-height ohidden">
+								
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/red-hero-male.png')" data-animate="fadeInLeft">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInLeft" data-delay="500">
+										<h3>Takeo Tempest</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInLeft" data-delay="700">
+										<p>Shielded resolve builds<br />										
+										Protected by fashioned will<br />	
+										I will guard the world</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/red-hero-female.png')" data-animate="fadeInRight" data-delay="150">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInRight" data-delay="650">
+										<h3>Hikari Scythe</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInRight" data-delay="850">
+										<p>Sparks flash to and fro<br />										
+										Sharp finesse with focused blade<br />	
+										Cleaving time from space</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+	
+					</div>
+					
+				</div>
+				
+				<div id="ctg-testimonials" class="section clearfix notopmargin nobottommargin" style="background-image: url('ctg-images/bg-texture.jpg'); background-repeat: repeat;">
+					
+					<div class="section-overlay"></div>
+					
+					<div class="heading-block center nobottomborder nobottommargin">
+						<h2>Game components</h2>
+					</div>
+					
+					<div class="container clearfix">
+						<div id="ctg-features" class="col_full nopadding common-height ohidden">
+							<!--<div class="col-md-6 col-padding" style="background: url('ctg-images/ctg-whats-in-the-box.png') center center / cover no-repeat; height: 673px;" data-animate="fadeInLeft">
+								<div>&nbsp;</div>
+							</div>-->
+							<img src="ctg-images/ctg-whats-in-the-box.png" alt="Exit Portal">
+							<div class="col-md-12 col-padding" style="height: 673px;">
+		
+								<div class="clearfix">	
+									<div class="col-sm-12 col-md-4 nopadding topmargin-sm clearfix">
+		
+										<div class="feature-box fbox-outline fbox-light fbox-effect fadeIn animated" data-animate="fadeIn">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line-paper-stack"></i></a>
+											</div>
+											<h3>57 x Standard Cards</h3>
+											<ul class="iconlist">
+												<li><i class="icon-ok-sign"></i> 18 x Risks</li>
+												<li><i class="icon-ok-sign"></i> 18 x Rewards</li>
+												<li><i class="icon-ok-sign"></i> 8 x Foes</li>
+												<li><i class="icon-ok-sign"></i> 8 x Relics</li>
+												<li><i class="icon-ok-sign"></i> 4 x Reference</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 nopadding topmargin-sm clearfix">
+										<div class="feature-box fbox-outline fbox-light fbox-effect fadeIn animated" data-animate="fadeIn">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line-stack-2"></i></a>
+											</div>
+											<h3>60 x Square Cards</h3>
+											<ul class="iconlist">
+												<li><i class="icon-ok-sign"></i> 12 x Red Zones</li>
+												<li><i class="icon-ok-sign"></i> 12 x Blue Zones</li>
+												<li><i class="icon-ok-sign"></i> 12 x Yellow Zones</li>
+												<li><i class="icon-ok-sign"></i> 12 x Green Zones</li>
+												<li><i class="icon-ok-sign"></i> 12 x Void Zones</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-4 nopadding topmargin-sm clearfix">
+										<div class="feature-box fbox-outline fbox-light fbox-effect fadeIn animated" data-animate="fadeIn">
+											<div class="fbox-icon">
+												<a href="#"><i class="icon-line-layout"></i></a>
+											</div>
+											<h3>Other Components</h3>
+											<ul class="iconlist">
+												<li><i class="icon-ok-sign"></i> 4 x Hero Cards</li>
+												<li><i class="icon-ok-sign"></i> 4 x Hero Tokens</li>
+												<li><i class="icon-ok-sign"></i> 4 x Hero Cubes</li>
+											</ul>
+										</div>
+		
+									</div>
+								</div>
+		
+							</div>
+						</div>
+					</div>
+					
+					<div id="ctg-rules" class="container clearfix nobottommargin">
+						<div class="promo promo-border promo-center bottommargin">
+							<h3>Chrono Team Go Rules <span class="label label-default nocolor">2.0</span></h3>
+							<span>Last updated February 2019</span>
+							<a href="https://docs.google.com/document/d/1jESPV1LptCJXXrMidAJ0l8Txkbfupp2ZPgOH02mGEYM/edit?usp=sharing" class="button button-xlarge button-rounded">View the Rules</a>
+						</div>
+					</div>
+					
+					<div class="container clearfix nobottommargin">
+						<div class="col_one_fourth center" data-animate="bounceIn">
+							<i class="i-plain i-xlarge divcenter nobottommargin icon-group ctg-red"></i>
+							<div class="counter counter-large ctg-red"><span data-from="1" data-to="8" data-refresh-interval="1" data-speed="200">0</span></div>
+							<h5>Heros</h5>
+						</div>
+	
+						<div class="col_one_fourth center" data-animate="bounceIn" data-delay="200">
+							<i class="i-plain i-xlarge divcenter nobottommargin icon-line-grid ctg-blue"></i>
+							<div class="counter counter-large ctg-blue"><span data-from="1" data-to="5" data-refresh-interval="50" data-speed="1500">0</span></div>
+							<h5>Zones</h5>
+						</div>
+	
+						<div class="col_one_fourth center" data-animate="bounceIn" data-delay="400">
+							<i class="i-plain i-xlarge divcenter nobottommargin icon-line2-settings ctg-yellow"></i>
+							<div class="counter counter-large ctg-yellow"><span data-from="1" data-to="8" data-refresh-interval="50" data-speed="1500"></span></div>
+							<h5>Relics</h5>
+						</div>
+	
+						<div class="col_one_fourth center col_last" data-animate="bounceIn" data-delay="600">
+							<i class="i-plain i-xlarge divcenter nobottommargin icon-exclamation ctg-green"></i>
+							<div class="counter counter-large ctg-green"><span data-from="1" data-to="8" data-refresh-interval="30" data-speed="2000"></span></div>
+							<h5>Foes</h5>
+						</div>
+					</div>
+					
+					<!-- When we get reviews 
+					<div class="container clearfix">
+						<div class="postcontent nobottommargin clearfix">
+		
+							<h3>What People Have Said</h3>
+		
+							<blockquote class="quote">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, maiores esse temporibus accusantium quas soluta quis sed rerum. Sapiente, culpa fugit sit est laboriosam odit.</p>
+								<footer>John Doe, Google Inc.</footer>
+							</blockquote>
+		
+						</div>
+					</div> 
+					-->
+
+				</div>
+				
+				<div class="section parallax dark notopmargin nobottommargin nobottompadding" style="background-image: url('ctg-images/blue-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+					
+					<div class="texture-overlay"></div>
+					
+					<div class="container clearfix">
+						
+						<div class="heading-block center nobottomborder">
+						<h2>
+							<div class="text-rotater ctg-blue" data-separator="|" data-rotate="fadeInUp" data-speed="2500">
+								Blue The power of <span class="t-rotate morphext"><span class="animated bounceIn">Space|Time|Wisdom</span></span>
+							</div>
+						</h2>
+						</div>
+						
+						<div class="container clearfix">
+							
+							<div id="ctg-features" class="col_full nopadding common-height ohidden">
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/blue-hero-female.png')" data-animate="fadeInLeft">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInLeft" data-delay="500">
+										<h3>Maaya Eclipse</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInLeft" data-delay="700">
+										<p>Planes of beauty held<br />										
+										Imagination finds form<br />	
+										And kindly takes flight</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/blue-hero-male.png')" data-animate="fadeInRight" data-delay="150">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInRight" data-delay="650">
+										<h3>Katsu Psion</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInRight" data-delay="850">
+										<p>Swirling worlds to grasp<br />										
+										All but a moment in mind<br />	
+										Worlds are shaped again</p>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+				
+				<div id="ctg-beta-test" class="section clearfix notopmargin nobottommargin" style="background-image: url('ctg-images/bg-texture.jpg'); background-repeat: repeat;">
+					
+					<div class="section-overlay"></div>
+					
+					<div class="container clearfix">
+						<div class="heading-block center">
+							<h2>PRE LAUNCH GAMING SESSIONS</h2>
+							<span>Your chance to be one of the first to play</span>
+						</div>
+						<!--
+						<div class="col_full topmargin-lg">
+							<div class="feature-box fbox-center fbox-bg fbox-border fbox-effect">
+								<div class="fbox-icon">
+									<a href="#"><i>!</i></a>
+								</div>
+								<h3>We are currently planning a limited pre-launch roadshow to feature in Chrono Team Go's home city of Brisbane, Australia.<span class="subtitle"><a ref="#" data-scrollto="#ctg-signup" data-offset="100">Sign Up</a> to be one of the first to experience Chrono Team Go before official launch.</span></h3>
+							</div>
+						</div>
+						-->
+						<div id="posts" class="events small-thumbs">
+							
+							<div class="entry clearfix">
+								<div class="entry-image">
+									<a href="#">
+										<img src="ctg-images/bt_tabletop_sim.jpg" alt="Tabletop Sim Image">
+										<!--<div class="entry-date">1<span>Nov</span></div>-->
+									</a>
+								</div>
+								<div class="entry-c">
+									<div class="entry-title">
+										<h2>Tabletop Simulator <span class="label label-info nocolor">On going</span></h2>
+									</div>
+									<ul class="entry-meta clearfix">
+										<li><i class="icon-calendar"></i> 2018</li>
+										<li><i class="icon-map-marker2"></i> tabletop Simulator</li>
+									</ul>
+									<div class="entry-content">
+										<p>Come and join us online to play Chrono Team Go. Contact us if you are interested in playing.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="entry clearfix">
+								<div class="entry-image">
+									<a href="#">
+										<img src="ctg-images/bt_fastbreak_sports.jpg" alt="Fastbreak Sports Image">
+										<!--<div class="entry-date">1<span>Nov</span></div>-->
+									</a>
+								</div>
+								<div class="entry-c">
+									<div class="entry-title">
+										<h2>Fastbreak Sports <span class="label label-warning nocolor">Done</span></h2>
+									</div>
+									<ul class="entry-meta clearfix">
+										<!--<li><span class="label label-success">New</span></li>-->
+										<li><i class="icon-time"></i> 18:30 - 21:30</li>
+										<li><i class="icon-calendar"></i> 1 Nov 2017</li>
+										<li><i class="icon-map-marker2"></i> 1 Chapel St, Nundah QLD 4012</li>
+									</ul>
+									<div class="entry-content">
+										<!--<p>Come and join us at the awesome Fastbreak Sports store for your chance to be one of the first to play Chrono Team Go.</p>-->
+										<p>Awesome night! A big thank you to Fastbreak Sports for allowing us to take a table at their store and to the players put time aside to play. We implemented feedback from earlier play throughs and the result has been more positive. Though it is very clear that the game is now more fun than previously while still keeping with the right amount of 'challenge'. Keep an eye on this section for our next event!</p>
+										<a href="http://www.fastbreak.com.au/" class="btn btn-info" target="_blank">View Store</a>
+									</div>
+								</div>
+							</div>
+							
+							<div class="entry clearfix">
+								<div class="entry-image">
+									<a href="#">
+										<img src="ctg-images/bt_vault_games.jpg" alt="Vault Games Image">
+										<!--<div class="entry-date">21<span>Oct</span></div>-->
+									</a>
+								</div>
+								<div class="entry-c">
+									<div class="entry-title">
+										<h2>Vault Games <span class="label label-warning nocolor">Done</span></h2>
+									</div>
+									<ul class="entry-meta clearfix">
+										<!--<li><span class="label label-success">New</span></li>-->
+										<li><i class="icon-time"></i> 17:00 - 22:00</li>
+										<li><i class="icon-calendar"></i> 21 Oct 2017</li>
+										<li><i class="icon-map-marker2"></i> 123 Charlotte St, Brisbane City QLD 4000</li>
+									</ul>
+									<div class="entry-content">
+										<!--<p>Come and join us at the awesome Vault Games store for your chance to be one of the first to play Chrono Team Go.</p>-->
+										<p>What a night! A big thank you to Vault Games and all the players that joined the special reveal event. So many games and so much fun was had by all! We have taken on board all the constructive feedback and working through some subtle refinements for our next events. Though it is very clear that the game is heaps of fun with just the right amount of 'challenge'. Stay tuned for our next event! Chrono Team Go!</p>
+										<!-- <a href="https://www.facebook.com/events/722098794649493/740596616133044/?acontext=%7B%22ref%22%3A%2229%22%2C%22ref_notif_type%22%3A%22admin_plan_mall_activity%22%2C%22action_history%22%3A%22null%22%7D&notif_id=1508223863387048&notif_t=admin_plan_mall_activity" class="btn btn-info" target="_blank">Read More</a>-->
+										<a href="http://www.vaultgames.com.au/" class="btn btn-info" target="_blank">View Store</a>
+									</div>
+								</div>
+							</div>
+	
+						</div>
+					</div>
+
+				</div>
+				
+				<div class="section parallax dark notopmargin nobottommargin nobottompadding" style="background-image: url('ctg-images/yellow-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+					<div class="texture-overlay"></div>
+					
+					<div class="container clearfix">
+						
+						<div class="heading-block center nobottomborder">
+						<h2>
+							<div class="text-rotater ctg-yellow" data-separator="|" data-rotate="fadeInUp" data-speed="2500">
+								Yellow The power of <span class="t-rotate morphext"><span class="animated bounceIn">Agility|Intellect|Speed</span></span>
+							</div>
+						</h2>
+						</div>
+						
+						<div class="container clearfix">
+							<div id="ctg-features" class="col_full nopadding common-height ohidden">
+								
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/yellow-hero-male.png')" data-animate="fadeInLeft">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInLeft" data-delay="500">
+										<h3>Tadashi Swift</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInLeft" data-delay="700">
+										<p>Threats in shadows wait<br />										
+										But do not snare nimble steps<br />	
+										Fleet gait finds purchase</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/yellow-hero-female.png')" data-animate="fadeInRight" data-delay="150">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInRight" data-delay="650">
+										<h3>Kiko Flux</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInRight" data-delay="850">
+										<p>Swift hands nimble mind<br />										
+										Opportunity awaits<br />	
+										Quick seize the moment</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+	
+					</div>
+					
+				</div>
+				
+				<div id="ctg-testimonials" class="section clearfix notopmargin nobottommargin" style="background-image: url('ctg-images/bg-texture.jpg'); background-repeat: repeat;">
+					
+					<div class="section-overlay"></div>
+					
+					<div id="ctg-faq" class="container clearfix">
+						
+						<div class="heading-block center">
+							<h2>FAQ</h2>
+						</div>
+						
+						<!-- Post Content
+						============================================= -->
+						<div class="postcontent nobottommargin clearfix">
+	
+							<ul id="portfolio-filter" class="portfolio-filter clearfix">
+	
+								<li class="activeFilter"><a href="#" data-filter="all">All</a></li>
+								<li><a href="#" data-filter=".faq-info">Info</a></li>
+								<li><a href="#" data-filter=".faq-sales">Sales</a></li>
+								<li><a href="#" data-filter=".faq-reviews">Reviews</a></li>
+								<li><a href="#" data-filter=".faq-testers">Testers</a></li>
+								<li><a href="#" data-filter=".faq-feedback">Feedback</a></li>
+								
+							</ul>
+	
+							<div class="clear"></div>
+	
+							<div id="faqs" class="faqs">
+	
+								<div class="toggle faq faq-info">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>When will CTG launch?</div>
+									<div class="togglec">CTG is still in the process of going through some pre-release testing, so far we have got great feedback that would make the game even better. Since 2018 we sat down and went through the feedback given and modified CTG to be even more enjoyable. We are super excited with CTG as it enters its public-beta phase in anticipation of full production. Be sure to <a ref="#" data-scrollto="#ctg-signup" data-offset="100">sign-up</a> to get the latest on our release plans.</div>
+								</div>
+	
+								<div class="toggle faq faq-sales">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>How do I buy it?</div>
+									<div class="togglec">Our current plans are to initially launch via the Kickstarter platform. There we will also have the opportunity to offer the market further production refinements depending on the various stretch goals. Post kickstarter, we hope to make the product available for both wholesale and direct sale internationally.</div>
+								</div>
+	
+								<div class="toggle faq faq-info">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>How much will it cost?</div>
+									<div class="togglec">The production values are still being finalised, though we are aiming to make this game very price competitive and accessible to a wide audience.</div>
+								</div>
+	
+								<div class="toggle faq faq-info">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>Wow I'm excited too - how can I support this further?</div>
+									<div class="togglec">So many people are catching the CTG bug. Fast, fun and simple cooperative play is so enjoyable. Please keep an eye out for our upcoming kickstarter campaign where you can show your support.</div>
+								</div>
+	
+								<div class="toggle faq faq-reviews">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>I am a professional game reviewer / blogger. Can I review your game?</div>
+									<div class="togglec">Absolutely - we are very interested in quality reviews. Please send us your details to <a href="mailto:reviews@chronoteamgo.com">reviews@chronoteamgo.com</a> so we can arrange a press-pack for you.</div>
+								</div>
+								
+								<div class="toggle faq faq-testers">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>How do I test your game?</div>
+									<div class="togglec">Testing is definitely the key to a great game! We are running out a variety of open and closed game testing events initially around Brisbane. <a ref="#" data-scrollto="#ctg-signup" data-offset="100">Sign-up</a> to our info list or keep checking in to this site for more information on our next event.</div>
+								</div>
+	
+								<div class="toggle faq faq-feedback">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>I've read the rules / played the game and feel I can contribute.</div>
+									<div class="togglec">Have a question or suggestion? We welcome any feedback on the rules and CTG gameplay. Please send your recommendations through to <a href="mailto:feedback@chronoteamgo.com">feedback@chronoteamgo.com</a> for our serious consideration.</div>
+								</div>
+								
+								<div class="toggle faq faq-info">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>Who is the game aimed at?</div>
+									<div class="togglec">CTG has been designed for most anyone to play while introducing modern game mechanics. With a fast set-up and duration, CTG is a great cooperative social game for new and advanced gamers alike.</div>
+								</div>
+								
+								<div class="toggle faq faq-sales">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>I want it now.</div>
+									<div class="togglec">Believe us when we say - we can't wait to launch as soon as possible too! But we want to get it right. Having said that, do <a ref="#" data-scrollto="#ctg-signup" data-offset="100">sign-up</a> and express your interest. We may run a limited pre-release offer for those early adopters!</div>
+								</div>
+								
+								<div class="toggle faq faq-info">
+									<div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-chevron-up"></i>Are there any expansions planned?</div>
+									<div class="togglec">The current CTG package is quite balanced and streamlined. Having said that, with its rich emerging lore and character, there are places we think CTG could expand into down the road. But for now, we're focused on the main offering being the best it can be.</div>
+								</div>
+	
+							</div>
+	
+	
+						</div><!-- .postcontent end -->
+						
+					</div>
+
+				</div>
+				
+				<div class="section parallax dark notopmargin nobottommargin nobottompadding" style="background-image: url('ctg-images/green-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+					<div class="texture-overlay"></div>
+					
+					<div class="container clearfix">
+						
+						<div class="heading-block center nobottomborder">
+						<h2>
+							<div class="text-rotater ctg-green" data-separator="|" data-rotate="fadeInUp" data-speed="2500">
+								Green The power of <span class="t-rotate morphext"><span class="animated bounceIn">Healing|Harmony|Growth</span></span>
+							</div>
+						</h2>
+						</div>
+						
+						<div class="container clearfix">
+							<div id="ctg-features" class="col_full nopadding common-height ohidden">
+								
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/green-hero-male.png')" data-animate="fadeInLeft">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInLeft" data-delay="500">
+										<h3>Hisato Phage</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInLeft" data-delay="700">
+										<p>Health wisely bestowed<br />										
+										Grants power to continue forth<br />	
+										That all could prosper</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-padding hero-image" style="background-image: url('ctg-images/heroes/green-hero-female.png')" data-animate="fadeInRight" data-delay="150">
+									<div class="heading-block center nobottomborder ctg-hero-name" data-animate="fadeInRight" data-delay="650">
+										<h3>Namika Bloom</h3>
+									</div>
+			
+									<div class="block center" data-animate="fadeInRight" data-delay="850">
+										<p>Rich life surrounds me<br />										
+										Gathering power and vigor<br />	
+										Shared freely tween all</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+	
+					</div>
+					
+				</div>
+				
+				<div class="section nomargin ctg-bg-section">
+						
+					<div class="section-overlay"></div>	
+					
+					
+					<div id="ctg-team" class="container clearfix">
+
+						<div class="heading-block center">
+							<h2>The Team</h2>
+						</div>
+	
+						<div class="col_one_third">
+	
+							<div class="team">
+								<div class="team-desc">
+									<div class="team-title"><h4>Matthew Aisthorpe</h4><span>Game Designer</span></div>
+<!--
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+-->
+								</div>
+							</div>
+	
+						</div>
+						
+						<div class="col_one_third">
+	
+							<div class="team">
+								<div class="team-desc">
+									<div class="team-title"><h4>Gary Morton</h4><span>Game Designer</span></div>
+<!--
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+-->
+								</div>
+							</div>
+	
+						</div>
+						
+						<div class="col_one_third col_last">
+	
+							<div class="team">
+								<div class="team-desc">
+									<div class="team-title"><h4>Peter Levonpera</h4><span>Game Artist</span></div>
+<!--
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									</a>
+									<a href="#" class="social-icon inline-block si-small si-light si-rounded si-gplus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									</a>
+-->
+								</div>
+							</div>
+	
+						</div>
+	
+						<div class="clear"></div>
+	
+					</div>
+					
+				</div>
+				
+				<div class="section parallax dark notopmargin nobottommargin nobottompadding" style="background-image: url('ctg-images/void-bg.jpg'); padding: 100px 0;" data-stellar-background-ratio="0.4">
+					<div class="texture-overlay"></div>
+					
+					<div class="container clearfix">
+						
+						<div class="heading-block center nobottomborder">
+							<h2>
+								Denizens of the void
+							</h2>
+						</div>
+						
+						<div class="container clearfix">
+							
+							<div id="ctg-features" class="col_full nopadding common-height ohidden">
+								<div class="col-sm-4 col-padding hero-image" style="background-image: url('ctg-images/spider.png')" data-animate="fadeInLeft">
+									<div class="heading-block center nobottomborder ctg-foe-name" data-animate="fadeInLeft" data-delay="500">
+										<h3>Void Spider</h3>
+									</div>
+								</div>
+								<div class="col-sm-4 col-padding hero-image" style="background-image: url('ctg-images/warden.png')"data-animate="fadeInDown" data-delay="150">
+									<div class="heading-block center nobottomborder ctg-foe-name" data-animate="fadeInDown" data-delay="650">
+										<h3>Spacial Warden</h3>
+									</div>
+								</div>
+								<div class="col-sm-4 col-padding hero-image" style="background-image: url('ctg-images/guardian.png')"data-animate="fadeInRight" data-delay="300">
+									<div class="heading-block center nobottomborder ctg-foe-name" data-animate="fadeInRight" data-delay="800">
+										<h3>Time Guardian</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>	
+				</div>
+				
+				<div class="section nomargin ctg-bg-section">
+					
+					<div class="section-overlay"></div>	
+					
+					<div class="heading-block center">
+						<h2>Sign Up</h2>
+					</div>
+					<!--
+					<div id="ctg-signup" class="container clearfix">
+						<div class="divcenter panel panel-default nobottommargin" style="max-width: 500px;">
+							<div class="panel-body quick-contact-widget" style="padding: 40px;">
+								<form id="quick-contact-form" name="quick-contact-form" action="/api/Comms" method="post" class="quick-contact-form nobottommargin">					
+									<h3>Sign Up for More Information</h3>
+		
+									<div class="quick-contact-form-result"></div>
+									<div class="form-process"></div>
+									<div class="col_full">
+										<label for="quick-contact-form-name">Name</label>
+										<input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" />
+									</div>
+									<div class="col_full">
+										<label for="quick-contact-form-email">Email</label>
+										<input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" />
+									</div>
+									<textarea class="hidden sm-form-control input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="4" cols="30">ctgsignup</textarea>
+									<input class="hidden" id="quick-contact-form-checkbox" class="checkbox-style" name="quick-contact-form-checkbox" type="checkbox" checked="">
+									<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+									<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-3d button-black nomargin" value="submit">Sign Up</button>
+								</form>
+
+							</div>
+						</div>
+						
+					</div>-->
+
+					<div id="ctg-signup" class="ml-embedded" data-form="eXw0O1"></div>
+					
+				</div>
+					
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyright &copy; 2017 Evergence pty ltd. All rights reserved.<br>
+<!-- 						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div> -->
+					</div>
+					<div class="col_half col_last">
+						
+					</div>
+
+					<div class="col_half col_last tright">
+<!--
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-vimeo">
+								<i class="icon-vimeo"></i>
+								<i class="icon-vimeo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-yahoo">
+								<i class="icon-yahoo"></i>
+								<i class="icon-yahoo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+-->
+
+						<i class="icon-envelope2"></i> <a href="mailto:info@chronoteamgo.com">info@chronoteamgo.com</a>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			var $faqItems = $('#faqs .faq');
+			if( window.location.hash != '' ) {
+				var getFaqFilterHash = window.location.hash;
+				var hashFaqFilter = getFaqFilterHash.split('#');
+				if( $faqItems.hasClass( hashFaqFilter[1] ) ) {
+					$('#portfolio-filter li').removeClass('activeFilter');
+					$( '[data-filter=".'+ hashFaqFilter[1] +'"]' ).parent('li').addClass('activeFilter');
+					var hashFaqSelector = '.' + hashFaqFilter[1];
+					$faqItems.css('display', 'none');
+					if( hashFaqSelector != 'all' ) {
+						$( hashFaqSelector ).fadeIn(500);
+					} else {
+						$faqItems.fadeIn(500);
+					}
+				}
+			}
+
+			$('#portfolio-filter a').click(function(){
+				$('#portfolio-filter li').removeClass('activeFilter');
+				$(this).parent('li').addClass('activeFilter');
+				var faqSelector = $(this).attr('data-filter');
+				$faqItems.css('display', 'none');
+				if( faqSelector != 'all' ) {
+					$( faqSelector ).fadeIn(500);
+				} else {
+					$faqItems.fadeIn(500);
+				}
+				return false;
+		   });
+		});
+	</script>
+
+	<!-- MailerLite Universal -->
+	<script>
+		(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+		.push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+		n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+		(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+		ml('account', '15071');
+	</script>
+	<!-- End MailerLite Universal -->
+	
+</body>
+</html>

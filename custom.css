@@ -5,10 +5,26 @@
 	green 94c66f
 */
 
-.heading-block h2 { 
+p {
+	margin-bottom: 13px;
+}
+
+ul, ol {
+	margin-left: 1.5em; /* Indent the list */
+	padding-left: 1em; /* Add inner spacing */
+	margin-bottom: 1.5em; /* Space between lists and other elements */
+	list-style-position: outside; /* Ensures bullets are outside the text area */
+}
+
+ ul li, ol li {
+	margin-bottom: 0.75em; /* Add spacing between list items */
+	line-height: 1.6; /* Improves readability */
+}
+
+.heading-block h2 {
 	color: #282828;
 	font-size: 3em;
-	-webkit-text-stroke: 0.01em white;
+	text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Soft white shadow for contrast */
 }
 
 .entry-meta li {
@@ -154,6 +170,76 @@
  	background-repeat: no-repeat; 
  	min-height: 500px;
 }
+
+/* For Hero Haiku's */
+#ctg-features h3, .text-rotater {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+	padding: 0.5em; /* Adds internal spacing to avoid crowding */
+}
+
+#ctg-features p {
+	line-height: 1.8; /* Adds more spacing between lines */
+	color: #ffffff; /* Ensures contrast with a detailed background */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better visibility */
+	padding: 0.5em; /* Adds internal spacing to avoid crowding */
+}
+
+/* For Team Images */
+
+.team-image {
+	text-align: center; /* Center child elements horizontally */
+}
+
+.team-image img {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	border-radius: 50%; /* Optional: makes the image circular */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+	margin: 0 auto; /* Center the image */
+}
+
+/* Button styles */
+.button.button-primary {
+	background: linear-gradient(45deg, #2d4afe, #94c66f); /* Blue to Green */
+	background-size: 200% 200%; /* For smooth animation */
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+	animation: gradient-shift 4s ease infinite; /* Infinite gradient animation */
+}
+
+	.button.button-primary:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+		transform: scale(1.05); /* Subtle zoom effect */
+	}
+
+	@keyframes gradient-shift {
+		0% {
+			background-position: 0% 50%; /* Start position */
+		}
+
+		50% {
+			background-position: 100% 50%; /* Middle position */
+		}
+
+		100% {
+			background-position: 0% 50%; /* End position */
+		}
+	}
+
+.button.button-secondary {
+	background-color: #557260; /* Muted green from your palette */
+	color: #fff;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+	border: 1px solid #94c66f;
+	transition: all 0.3s ease-in-out;
+}
+
+	.button.button-secondary:hover {
+		background-color: #6b947d; /* Slightly brighter on hover */
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+		transform: scale(1.02);
+	}
 
 /* Fix Banner Height Mobile */
 @media (max-width: 479px) {
